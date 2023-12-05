@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coktel Shop App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="earth-tone">
+    <div class="container">
+        <div class="menu">
+            <h2>Coktel Shop Menu</h2>
+            <div class="button-container">
+                <button onclick="inputValue('349')">
+                    <img src="images/grep.jpg" alt="Button 1 Image">
+                </button>
+                <button onclick="inputValue('479')">
+                    <img src="images/orange.jpg" alt="Button 2 Image">
+                </button>
+                <button onclick="inputValue('559')">
+                    <img src="images/lemon.jpg" alt="Button 3 Image">
+                </button>
+                <button onclick="inputValue('499')">
+                    <img src="images/push.jpg" alt="Button 4 Image">
+                </button>
+                <button onclick="inputValue('589')">
+                    <img src="images/orange2.jpg" alt="Button 5 Image">
+                </button>
+                <button onclick="inputValue('550')">
+                    <img src="images/sawaros.jpg" alt="Button 6 Image">
+                </button>
+            </div>
+        </div>
+
+        <div class="calculation">
+            <h2>Calculation</h2>
+            <label for="mathInput">Enter a Prices of Coktel:</label>
+            <input type="text" id="mathInput" class="input-field">
+
+            <button id="calculateButton" onclick="calculate()">Calculate</button>
+            <button id="clearDataButton" onclick="clearData()">Clear Data</button>
+
+            <div id="result" class="result"></div>
+
+            <h2>Calculation History:</h2>
+            <ul id="historyList" class="history-list"></ul>
+
+            <div id="total" class="total"></div>
+
+            <button id="clearButton" onclick="clearAll()">Clear All</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
